@@ -37,14 +37,27 @@
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/projects-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/projects.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/projects-mobile.svg" />
-  <img src="./assets/profile/projects.svg" width="100%" alt="Selected projects. SkyCommand is my private-source independent workflow platform: durable workflows, optional AI agents, run diagnostics, scoped Git delivery, Docker operations and structured results. MacroAnalyzer is a public React and ASP.NET Core/C# analytics project with PostgreSQL, REST APIs, dashboards, alerts and time-series views." />
+  <img src="./assets/profile/projects.svg" width="100%" alt="Featured SkyCommand alongside Current Focus: durable workflows, optional AI agents, MCP-enabled coding, configured embedded-agent capabilities and work-order coordination. Native work-order integration is planned for Phase 20." />
 </picture>
 </p>
 
 <p align="center">
-  <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer source</strong></a> ·
   <a href="https://github.com/PStar80/SkyCommand-Demo"><strong>Explore SkyCommand</strong></a> ·
   <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>Request a walkthrough</strong></a>
+</p>
+
+<p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/portfolio-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/portfolio.svg" />
+  <source media="(max-width: 650px)" srcset="./assets/profile/portfolio-mobile.svg" />
+  <img src="./assets/profile/portfolio.svg" width="100%" alt="Public projects: SkyDataStudio on the left, MacroAnalyzer on the right. SkyDataStudio is a data engineering workbench for governed analytical products, with metadata, pipelines, dbt transformations, data quality and lineage. MacroAnalyzer is a React and ASP.NET Core/C# macroeconomic analytics application with PostgreSQL, dashboards, alerts and historical time-series views." />
+</picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/PStar80/SkyDataStudio"><strong>SkyDataStudio source</strong></a> ·
+  <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer source</strong></a>
 </p>
 
 <p>
@@ -102,7 +115,7 @@ A full-stack macroeconomic analytics project built with React, ASP.NET Core/C#, 
 
 **[SkyDataStudio — public repository](https://github.com/PStar80/SkyDataStudio)**
 
-An additional public project in my development ecosystem. The repository is the source of truth for its current scope and implementation.
+Data engineering workbench for governed analytical products, with metadata, pipelines, dbt transformations, data quality and lineage. It prepares trusted ingested data for analytical consumption, using Python/FastAPI, PostgreSQL, Airflow, dbt and Docker.
 
 ### Engineering principles
 

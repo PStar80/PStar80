@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent.parent
-BASES=('hero','overview','systems','projects','connect','linkedin','github','email')
+BASES=('hero','overview','systems','projects','portfolio','connect','linkedin','github','email')
 SVG='http://www.w3.org/2000/svg'
 ET.register_namespace('',SVG)
 ET.register_namespace('xlink','http://www.w3.org/1999/xlink')
@@ -40,6 +40,6 @@ def main()->None:
     output=Path(os.environ.get('OUTPUT_DIR','dist'))
     for suffix in ('','-mobile'):
         freeze(output/f'engineering-activity{suffix}.svg',output/f'engineering-activity{suffix}-static.svg')
-    print('Generated 16 profile and 2 calendar still-image fallbacks.')
+    print('Generated 18 profile and 2 calendar still-image fallbacks.')
 
 if __name__=='__main__': main()
