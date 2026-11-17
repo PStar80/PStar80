@@ -36,7 +36,7 @@ def main()->None:
     for base in BASES:
         for suffix in ('','-mobile'):
             name=f'{base}{suffix}.svg'
-            freeze(ROOT/name,ROOT/'assets'/'static'/name)
+            freeze(ROOT/'assets'/'profile'/name,ROOT/'assets'/'static'/name)
     output=Path(os.environ.get('OUTPUT_DIR','dist'))
     for suffix in ('','-mobile'):
         freeze(output/f'engineering-activity{suffix}.svg',output/f'engineering-activity{suffix}-static.svg')

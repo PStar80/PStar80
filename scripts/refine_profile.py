@@ -144,7 +144,7 @@ def refine(path):
 def main():
     changed=[]
     for name in FILES:
-        path=ROOT/name
+        path=ROOT/'assets'/'profile'/name
         if not path.is_file(): raise FileNotFoundError(f'Missing required profile asset: {name}')
         if refine(path): changed.append(name)
     print('Refined assets:',', '.join(changed) if changed else 'already up to date')

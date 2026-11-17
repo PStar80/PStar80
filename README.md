@@ -1,12 +1,12 @@
 <!-- Paul Sattaur / PStar80 | Repository-local blue metallic profile. -->
-<!-- Animated assets are at root; still-image fallbacks are in assets/static; daily activity is on output. -->
+<!-- Animated assets are in assets/profile; still-image fallbacks are in assets/static; daily activity is on output. -->
 
 <p>
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/hero-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero.svg" />
-  <source media="(max-width: 650px)" srcset="./hero-mobile.svg" />
-  <img src="./hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. An animated orchestration hub illustrates backend systems, durable workflows, data engineering and AI-assisted delivery." />
+  <source media="(max-width: 650px)" srcset="./assets/profile/hero-mobile.svg" />
+  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. An animated orchestration hub illustrates backend systems, durable workflows, data engineering and AI-assisted delivery." />
 </picture>
 </p>
 
@@ -14,8 +14,8 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/overview-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/overview.svg" />
-  <source media="(max-width: 650px)" srcset="./overview-mobile.svg" />
-  <img src="./overview.svg" width="100%" alt="About me: enterprise experience and a builder mindset. I build backend systems, data platforms and workflow automation with clear contracts and visible execution. Deterministic by default; AI where it earns its place. Technologies: Python, JavaScript, C#/.NET, React, Node.js, PostgreSQL, Docker, Temporal, Oracle PL/SQL, REST APIs, Git/GitHub and TypeScript." />
+  <source media="(max-width: 650px)" srcset="./assets/profile/overview-mobile.svg" />
+  <img src="./assets/profile/overview.svg" width="100%" alt="About me: enterprise experience and a builder mindset. I build backend systems, data platforms and workflow automation with clear contracts and visible execution. Deterministic by default; AI where it earns its place. Technologies: Python, JavaScript, C#/.NET, React, Node.js, PostgreSQL, Docker, Temporal, Oracle PL/SQL, REST APIs, Git/GitHub and TypeScript." />
 </picture>
 </p>
 
@@ -23,8 +23,8 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/systems-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/systems.svg" />
-  <source media="(max-width: 650px)" srcset="./systems-mobile.svg" />
-  <img src="./systems.svg" width="100%" alt="SkyCommand architecture: the React operator UI and external coding agents through MCP use existing platform services. Temporal workflows can call optional embedded agents, whose run-bound MCP access follows Project and Agent-version capability configuration. Work-order families coordinate current development; native integration is planned for Phase 20. Illustrative architecture, not live status." />
+  <source media="(max-width: 650px)" srcset="./assets/profile/systems-mobile.svg" />
+  <img src="./assets/profile/systems.svg" width="100%" alt="SkyCommand architecture: the React operator UI and external coding agents through MCP use existing platform services. Temporal workflows can call optional embedded agents, whose run-bound MCP access follows Project and Agent-version capability configuration. Work-order families coordinate current development; native integration is planned for Phase 20. Illustrative architecture, not live status." />
 </picture>
 </p>
 
@@ -36,8 +36,8 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/projects-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/projects.svg" />
-  <source media="(max-width: 650px)" srcset="./projects-mobile.svg" />
-  <img src="./projects.svg" width="100%" alt="Selected projects. SkyCommand is my private-source independent workflow platform: durable workflows, optional AI agents, run diagnostics, scoped Git delivery, Docker operations and structured results. MacroAnalyzer is a public React and ASP.NET Core/C# analytics project with PostgreSQL, REST APIs, dashboards, alerts and time-series views." />
+  <source media="(max-width: 650px)" srcset="./assets/profile/projects-mobile.svg" />
+  <img src="./assets/profile/projects.svg" width="100%" alt="Selected projects. SkyCommand is my private-source independent workflow platform: durable workflows, optional AI agents, run diagnostics, scoped Git delivery, Docker operations and structured results. MacroAnalyzer is a public React and ASP.NET Core/C# analytics project with PostgreSQL, REST APIs, dashboards, alerts and time-series views." />
 </picture>
 </p>
 
@@ -60,15 +60,15 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/connect-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/connect.svg" />
-  <source media="(max-width: 650px)" srcset="./connect-mobile.svg" />
-  <img src="./connect.svg" width="100%" alt="Let's connect. Open to backend engineering, workflow automation, AI-enabled applications and consulting conversations. Build systems that explain themselves." />
+  <source media="(max-width: 650px)" srcset="./assets/profile/connect-mobile.svg" />
+  <img src="./assets/profile/connect.svg" width="100%" alt="Let's connect. Open to backend engineering, workflow automation, AI-enabled applications and consulting conversations. Build systems that explain themselves." />
 </picture>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/paulsattaur/"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/linkedin-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/linkedin.svg" /><source media="(max-width: 650px)" srcset="./linkedin-mobile.svg" /><img src="./linkedin.svg" width="32%" alt="Connect with Paul Sattaur on LinkedIn" /></picture></a>
-  <a href="https://github.com/PStar80"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/github-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/github.svg" /><source media="(max-width: 650px)" srcset="./github-mobile.svg" /><img src="./github.svg" width="32%" alt="Visit PStar80 on GitHub" /></picture></a>
-  <a href="mailto:paulsattaur@hotmail.com"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/email-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/email.svg" /><source media="(max-width: 650px)" srcset="./email-mobile.svg" /><img src="./email.svg" width="32%" alt="Email Paul at paulsattaur@hotmail.com" /></picture></a>
+  <a href="https://www.linkedin.com/in/paulsattaur/"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/linkedin-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/linkedin.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/linkedin-mobile.svg" /><img src="./assets/profile/linkedin.svg" width="32%" alt="Connect with Paul Sattaur on LinkedIn" /></picture></a>
+  <a href="https://github.com/PStar80"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/github-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/github.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/github-mobile.svg" /><img src="./assets/profile/github.svg" width="32%" alt="Visit PStar80 on GitHub" /></picture></a>
+  <a href="mailto:paulsattaur@hotmail.com"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/email-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/email.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/email-mobile.svg" /><img src="./assets/profile/email.svg" width="32%" alt="Email Paul at paulsattaur@hotmail.com" /></picture></a>
 </p>
 
 <details>
