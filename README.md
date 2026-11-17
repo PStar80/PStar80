@@ -24,8 +24,12 @@
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/systems-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/systems.svg" />
   <source media="(max-width: 650px)" srcset="./systems-mobile.svg" />
-  <img src="./systems.svg" width="100%" alt="SkyCommand simplified architecture: React operator interface to Node.js Core API to Temporal workflows to registered tools. AI agents form an optional workflow branch. PostgreSQL stores workflow and run metadata. The animation illustrates architecture, not live system status." />
+  <img src="./systems.svg" width="100%" alt="SkyCommand architecture: the React operator UI and external coding agents through MCP use existing platform services. Temporal workflows can call optional embedded agents, whose run-bound MCP access follows Project and Agent-version capability configuration. Work-order families coordinate current development; native integration is planned for Phase 20. Illustrative architecture, not live status." />
 </picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/PStar80/SkyCommand-Demo/blob/main/docs/architecture.md"><strong>MCP, agent capabilities &amp; work-order architecture</strong></a>
 </p>
 
 <p>
@@ -82,9 +86,15 @@ My enterprise background includes **Oracle SQL/PLSQL, Java/J2EE, C#/.NET compone
 
 **[SkyCommand — independent platform, private source](https://github.com/PStar80/SkyCommand-Demo)**
 
-A workflow automation and orchestration platform with Temporal-backed durable execution, reusable tools, optional AI-agent nodes, approvals, retries, recovery controls, scheduling, structured results and operational visibility. My current work includes agent integration and developer workflows across Git, Docker and database-backed services.
+A workflow automation and orchestration platform with Temporal-backed durable execution, reusable tools, optional AI-agent nodes, approvals, retries, recovery controls, scheduling, structured results and operational visibility. My current work includes external coding-agent access through MCP, configurable embedded-agent capabilities, and developer workflows across Git, Docker and database-backed services.
 
-Explore the [public showcase](https://github.com/PStar80/SkyCommand-Demo) for the architecture overview, feature tour, and walkthrough guide. The application implementation remains private. [Ask about SkyCommand](mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough).
+**Agents in both directions:** workflows can call embedded agents, and external coding assistants can use SkyCommand through MCP to invoke exposed registered operations and inspect results. External and embedded connections use distinct identities and permissions over shared platform registrations.
+
+**Embedded-agent capability controls:** assignments are scoped to a Project and exact Agent definition version, covering Tools, published Workflows and supported direct operations. Direct-operation controls do not add duplicate checks inside an already enabled Tool or Workflow's normal contract. Existing executor permissions and explicitly configured approvals still apply.
+
+**Structured prompt and work-order engineering:** I use work-order families to coordinate scoped development streams, assigned roles, dependencies, exact handoffs, execution state and review evidence. One accountable writer per shared checkout preserves unrelated work. **Phase 20 is planned to integrate this existing development method into SkyCommand natively; that product integration is not yet presented as delivered.**
+
+Explore the [public showcase](https://github.com/PStar80/SkyCommand-Demo) for the MCP and capability architecture, work-order model, feature tour, and walkthrough guide. The application implementation remains private. [Ask about SkyCommand](mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough).
 
 **[MacroAnalyzer — public repository](https://github.com/PStar80/MacroAnalyzer)**
 
