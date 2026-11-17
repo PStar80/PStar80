@@ -24,7 +24,7 @@
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/systems-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/systems.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/systems-mobile.svg" />
-  <img src="./assets/profile/systems.svg" width="100%" alt="SkyCommand architecture: the React operator UI and external coding agents through MCP use existing platform services. Temporal workflows can call optional embedded agents, whose run-bound MCP access follows Project and Agent-version capability configuration. Work-order families coordinate current development; native integration is planned for Phase 20. Illustrative architecture, not live status." />
+  <img src="./assets/profile/systems.svg" width="100%" alt="SkyCommand system architecture: Operator and External coding agents both connect to the shared React UI / Node.js Core API box. It branches into Registered Tools, Embedded AI Agents and Published Workflows. All three service paths merge into PostgreSQL Database. Conceptual architecture; configured permissions apply." />
 </picture>
 </p>
 
@@ -102,6 +102,8 @@ My current focus is **AI-native applications and agentic automation**: integrati
 **[SkyCommand — independent platform, private source](https://github.com/PStar80/SkyCommand-Demo)**
 
 A workflow automation and orchestration platform with Temporal-backed durable execution, reusable tools, optional AI-agent nodes, approvals, retries, recovery controls, scheduling, structured results and operational visibility. My current work includes external coding-agent access through MCP, configurable embedded-agent capabilities, and developer workflows across Git, Docker and database-backed services.
+
+**Architecture at a glance:** operators and external coding agents can each use the React UI or access the Node.js Core API. The diagram groups those entry points as **React UI / Node.js Core API**, branching to **Registered Tools**, **Embedded AI Agents** and **Published Workflows**. All three service paths connect to **PostgreSQL Database** for data and persisted state.
 
 **Agents in both directions:** workflows can call embedded agents, and external coding assistants can use SkyCommand through MCP to invoke exposed registered operations and inspect results. External and embedded connections use distinct identities and permissions over shared platform registrations.
 
