@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: profile-activity
+  cancel-in-progress: false
+
 jobs:
   generate:
     permissions:
@@ -18,6 +22,30 @@ jobs:
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Refine profile motion and readability
+        run: python scripts/refine_profile.py
+
+      - name: Generate blue contribution calendar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE_USER: ${{ github.repository_owner }}
+          OUTPUT_DIR: dist
+        run: python scripts/generate_blue_activity.py
+
+      - name: Commit refined profile graphics when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- hero.svg hero-mobile.svg overview.svg overview-mobile.svg systems.svg systems-mobile.svg projects.svg projects-mobile.svg connect.svg connect-mobile.svg linkedin.svg linkedin-mobile.svg github.svg github-mobile.svg email.svg email-mobile.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refine profile animation, optional-agent diagram and text readability'
+            git push origin HEAD:main
+          fi
 
       - name: Generate Pac-Man contribution graph
         uses: abozanona/pacman-contribution-graph@main
