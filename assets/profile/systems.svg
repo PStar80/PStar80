@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif" data-profile-refinement="2" data-profile-layout="3" data-architecture="cloud-local-relay-v2" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title desc">
-<title id="title">SkyCommand System Architecture</title>
+<title id="title">Development Process Flow</title>
 <desc id="desc">Cloud Agent connects to the Operator and to Dropbox. Dropbox relays work artifacts to the Local Agent; the Operator initiates the Local Agent. Operator and Local Agent both use React UI / Node.js Core API. One arrow leads to Execution Capabilities containing Registered Tools, Embedded AI Agents and Published Workflows. One arrow leads to Automation Endpoints containing File System, Database, Git Repositories and Web APIs from left to right. The cloud/local relay illustrates the current development setup. Configured permissions apply.</desc>
 <defs>
 <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06111C"/><stop offset=".55" stop-color="#07131F"/><stop offset="1" stop-color="#020A12"/></linearGradient>
@@ -20,7 +20,7 @@
 <path d="M2 2H958V648H2Z" fill="none" stroke="#25D6FF" stroke-width="1.5" opacity=".55" pathLength="100" stroke-dasharray="6 94" class="sweep"/>
 <path d="M2 2H958V648H2Z" fill="none" stroke="#E6FAFF" stroke-width="1.5" opacity=".70" pathLength="100" stroke-dasharray="1.2 98.8" class="spark"/>
 <path d="M21 9H9V21M939 9H951V21M21 641H9V629M939 641H951V629" fill="none" stroke="#A9C9DD" opacity=".65"/>
-<text x="26" y="43" font-size="25" fill="#F0F7FC" font-weight="650" text-anchor="start">System Architecture</text><path d="M25 62H935" stroke="#22485C"/><rect x="25" y="61" width="70" height="2" fill="url(#accent)"/>
+<text x="26" y="43" font-size="25" fill="#F0F7FC" font-weight="650" text-anchor="start">Development Process Flow</text><path d="M25 62H935" stroke="#22485C"/><rect x="25" y="61" width="70" height="2" fill="url(#accent)"/>
 <path id="cloud-operator" d="M246 140V170" fill="none" stroke="#25B8D6" stroke-width="2" marker-end="url(#arrow)"/><path d="M246 140V170" fill="none" stroke="#D8FAFF" stroke-width="2" pathLength="100" stroke-dasharray="7 93" opacity=".65" class="route-main"/>
 <path id="cloud-dropbox" d="M396 115H490" fill="none" stroke="#25B8D6" stroke-width="2" marker-end="url(#arrow)"/><path d="M396 115H490" fill="none" stroke="#D8FAFF" stroke-width="2" pathLength="100" stroke-dasharray="7 93" opacity=".65" class="route-main"/>
 <path id="dropbox-local" d="M740 115H780V170" fill="none" stroke="#25B8D6" stroke-width="2" marker-end="url(#arrow)"/><path d="M740 115H780V170" fill="none" stroke="#D8FAFF" stroke-width="2" pathLength="100" stroke-dasharray="7 93" opacity=".65" class="route-main"/>
