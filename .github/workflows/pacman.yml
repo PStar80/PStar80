@@ -25,9 +25,6 @@ jobs:
         with:
           ref: main
 
-      - name: Update full-stack introduction and header (one time)
-        run: python scripts/update_profile_intro_once.py
-
       - name: Refine profile motion and readability
         run: python scripts/refine_profile.py
 
@@ -43,44 +40,17 @@ jobs:
           OUTPUT_DIR: dist
         run: python scripts/create_static_assets.py
 
-      - name: Verify introduction graphics and local image references
-        shell: python
-        run: |
-          from pathlib import Path
-          import re
-          import xml.etree.ElementTree as ET
-          for folder in ('profile', 'static'):
-              for name in ('hero', 'hero-mobile', 'overview', 'overview-mobile'):
-                  path = Path('assets') / folder / (name + '.svg')
-                  root = ET.fromstring(path.read_text(encoding='utf-8'))
-                  assert root.get('data-intro') == 'full-stack-v1', str(path)
-                  if folder == 'static':
-                      assert not any(n.tag.rsplit('}',1)[-1] in ('style','animate','animateMotion','animateTransform') for n in root.iter()), str(path)
-                  if name.startswith('overview'):
-                      content = ''.join(root.itertext())
-                      assert 'Deterministic by default.' not in content
-                      assert 'AI where it earns its place.' not in content
-                      for term in ('SkyCommand','SkyDataStudio','MacroAnalyzer','AI-native applications'):
-                          assert term in content, (path, term)
-          readme = Path('README.md').read_text(encoding='utf-8')
-          local = re.findall(r'(?:src|srcset)="(\./[^"]+)"', readme)
-          assert local
-          for reference in local:
-              assert Path(reference).is_file(), reference
-          print('Verified 8 introduction images and',len(local),'local image references.')
-
       - name: Commit refined profile graphics when changed
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- README.md
           for name in hero overview systems projects portfolio connect linkedin github email; do
             git add -- "assets/profile/${name}.svg" "assets/profile/${name}-mobile.svg" "assets/static/${name}.svg" "assets/static/${name}-mobile.svg"
           done
           if ! git diff --cached --quiet; then
-            git commit -m 'Present full-stack applications with immersive animated header'
+            git commit -m 'Refine profile graphics and reduced-motion fallbacks'
             git push origin HEAD:main
           fi
 
