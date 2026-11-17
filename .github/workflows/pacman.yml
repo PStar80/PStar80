@@ -25,106 +25,6 @@ jobs:
         with:
           ref: main
 
-      - name: Move misplaced profile assets and verify dependent paths (one time)
-        shell: python
-        run: |
-          from pathlib import Path
-          import ast
-          import hashlib
-          import runpy
-          import subprocess
-          import tempfile
-          import xml.etree.ElementTree as ET
-          from html.parser import HTMLParser
-
-          root = Path.cwd()
-          names = [f'{base}{suffix}.svg' for base in
-                   ('hero', 'overview', 'systems', 'projects', 'connect', 'linkedin', 'github', 'email')
-                   for suffix in ('', '-mobile')]
-          destination = root / 'assets' / 'profile'
-          if all((destination / name).is_file() and not (root / name).exists() for name in names):
-              print('Profile assets are already organized; no migration needed.')
-              raise SystemExit(0)
-          for name in names:
-              if not (root / name).is_file() or (destination / name).exists():
-                  raise RuntimeError(f'Unexpected source or destination for {name}; no files moved.')
-
-          before = {name: (root / name).read_bytes() for name in names}
-          static_before = {name: (root / 'assets' / 'static' / name).read_bytes() for name in names}
-          original_readme = (root / 'README.md').read_text(encoding='utf-8')
-          old_comment = 'Animated assets are at root;'
-          new_comment = 'Animated assets are in assets/profile;'
-          if original_readme.count(old_comment) != 1:
-              raise RuntimeError('README location comment differs; no files moved.')
-          readme = original_readme.replace(old_comment, new_comment, 1)
-          for name in names:
-              old, new = f'"./{name}"', f'"./assets/profile/{name}"'
-              if readme.count(old) != 1:
-                  raise RuntimeError(f'Expected one README source for {name}; no files moved.')
-              readme = readme.replace(old, new, 1)
-          restored = readme.replace(new_comment, old_comment, 1)
-          for name in names:
-              restored = restored.replace(f'"./assets/profile/{name}"', f'"./{name}"')
-          if restored != original_readme:
-              raise RuntimeError('README contains non-path changes; no files moved.')
-
-          replacements = {
-              'scripts/refine_profile.py': (
-                  '        path=ROOT/name\n',
-                  "        path=ROOT/'assets'/'profile'/name\n"),
-              'scripts/create_static_assets.py': (
-                  "            freeze(ROOT/name,ROOT/'assets'/'static'/name)",
-                  "            freeze(ROOT/'assets'/'profile'/name,ROOT/'assets'/'static'/name)")
-          }
-          updates = {'README.md': readme}
-          for relative, (old, new) in replacements.items():
-              source = (root / relative).read_text(encoding='utf-8')
-              if source.count(old) != 1:
-                  raise RuntimeError(f'Expected source path not found in {relative}; no files moved.')
-              updated = source.replace(old, new, 1)
-              ast.parse(updated, filename=relative)
-              updates[relative] = updated
-          for data in before.values():
-              ET.fromstring(data)
-
-          destination.mkdir(parents=True, exist_ok=True)
-          for name in names:
-              subprocess.run(['git', 'mv', '--', name, f'assets/profile/{name}'], check=True)
-          for relative, text in updates.items():
-              (root / relative).write_bytes(text.encode('utf-8'))
-          subprocess.run(['python', 'scripts/refine_profile.py'], check=True)
-          freeze = runpy.run_path(str(root / 'scripts' / 'create_static_assets.py'))['freeze']
-          with tempfile.TemporaryDirectory() as temporary:
-              for name in names:
-                  freeze(destination / name, Path(temporary) / name)
-                  if (Path(temporary) / name).read_bytes() != static_before[name]:
-                      raise RuntimeError(f'Static rendering changed for {name}; migration not committed.')
-
-          class ImageSources(HTMLParser):
-              def __init__(self):
-                  super().__init__()
-                  self.local = []
-              def handle_starttag(self, tag, attrs):
-                  for key, value in attrs:
-                      if key in ('src', 'srcset') and value and value.startswith('./'):
-                          self.local.append(value)
-
-          sources = ImageSources()
-          sources.feed(readme)
-          if len(sources.local) != 32:
-              raise RuntimeError(f'Expected 32 local image sources; found {len(sources.local)}.')
-          for source in sources.local:
-              if not (root / source).is_file():
-                  raise FileNotFoundError(source)
-          for name, data in before.items():
-              if (destination / name).read_bytes() != data or (root / name).exists():
-                  raise RuntimeError(f'Asset preservation check failed: {name}')
-              if (root / 'assets' / 'static' / name).read_bytes() != static_before[name]:
-                  raise RuntimeError(f'Static asset changed: {name}')
-              print(f'PRESERVED {name} {hashlib.sha256(data).hexdigest()}')
-          subprocess.run(['git', 'diff', '--check'], check=True)
-          print('VERIFIED: 16 exact asset moves; 32 resolving local image sources; unchanged static assets and README wording; both generators checked.')
-
       - name: Refine profile motion and readability
         run: python scripts/refine_profile.py
 
@@ -146,12 +46,11 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- README.md scripts/refine_profile.py scripts/create_static_assets.py
           for name in hero overview systems projects connect linkedin github email; do
             git add -- "assets/profile/${name}.svg" "assets/profile/${name}-mobile.svg" "assets/static/${name}.svg" "assets/static/${name}-mobile.svg"
           done
           if ! git diff --cached --quiet; then
-            git commit -m 'Organize profile assets and update dependent paths'
+            git commit -m 'Refine profile graphics and reduced-motion fallbacks'
             git push origin HEAD:main
           fi
 
