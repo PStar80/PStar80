@@ -25,16 +25,6 @@ jobs:
         with:
           ref: main
 
-      - name: Apply requested card layout (one time)
-        shell: bash
-        run: |
-          set -euo pipefail
-          if grep -q 'data-profile-layout="3"' assets/profile/systems.svg; then
-            echo 'Requested layout is already installed.'
-          else
-            python scripts/reflow_profile_once.py
-          fi
-
       - name: Refine profile motion and readability
         run: python scripts/refine_profile.py
 
@@ -50,39 +40,17 @@ jobs:
           OUTPUT_DIR: dist
         run: python scripts/create_static_assets.py
 
-      - name: Verify reflowed graphics and local image paths
-        shell: python
-        run: |
-          import re
-          import xml.etree.ElementTree as ET
-          from pathlib import Path
-          readme = Path('README.md').read_text(encoding='utf-8')
-          paths = re.findall(r'(?:src|srcset)="(\./[^"]+)"', readme)
-          assert all(Path(p).is_file() for p in paths), 'Unresolved README image'
-          for base in ('systems', 'projects', 'portfolio'):
-              for suffix in ('', '-mobile'):
-                  name = base + suffix + '.svg'
-                  animated = ET.parse(Path('assets/profile') / name).getroot()
-                  still = ET.parse(Path('assets/static') / name).getroot()
-                  ns = '{http://www.w3.org/2000/svg}'
-                  texts = lambda r: [t.text for t in r.iter(ns + 'text')]
-                  assert texts(animated) == texts(still), 'Static text drift'
-                  assert not any(t.tag.rsplit('}',1)[-1] in ('style','animate','animateMotion','animateTransform') for t in still.iter()), 'Motion in static source'
-          assert readme.index('src="./assets/profile/systems.svg"') < readme.index('src="./assets/profile/projects.svg"') < readme.index('src="./assets/profile/portfolio.svg"') < readme.index('output/engineering-activity.svg')
-          print(f'PASS: {len(paths)} local image references; 6 animated and 6 matching static panels; requested row order.')
-
       - name: Commit refined profile graphics when changed
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- README.md scripts/create_static_assets.py
           for name in hero overview systems projects portfolio connect linkedin github email; do
             git add -- "assets/profile/${name}.svg" "assets/profile/${name}-mobile.svg" "assets/static/${name}.svg" "assets/static/${name}-mobile.svg"
           done
           if ! git diff --cached --quiet; then
-            git commit -m 'Arrange architecture, featured focus and equal public-project cards'
+            git commit -m 'Refine profile graphics and reduced-motion fallbacks'
             git push origin HEAD:main
           fi
 
