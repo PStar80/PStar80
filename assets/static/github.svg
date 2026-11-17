@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-profile-refinement="2" width="310" height="66" viewBox="0 0 310 66" role="img" aria-labelledby="title desc" data-motion="static">
+<title id="title">GitHub</title><desc id="desc">GitHub — follow the enclosing README link. Static reduced-motion version.</desc>
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#06111C" /><stop offset=".55" stop-color="#07131F" /><stop offset="1" stop-color="#020A12" />
+  </linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#D8E7EE" /><stop offset=".10" stop-color="#3C596D" /><stop offset=".26" stop-color="#9DB5C4" />
+    <stop offset=".42" stop-color="#1F3547" /><stop offset=".57" stop-color="#6B96B1" /><stop offset=".72" stop-color="#E3F4FF" /><stop offset=".84" stop-color="#365569" /><stop offset="1" stop-color="#91ACBF" />
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#25D6FF" /><stop offset="1" stop-color="#148CFF" stop-opacity="0" /></linearGradient>
+  <linearGradient id="fade"><stop stop-color="black" /><stop offset=".18" stop-color="white" /><stop offset=".94" stop-color="white" /><stop offset="1" stop-color="black" /></linearGradient>
+  <mask id="artFade" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#fade)" /></mask>
+  <radialGradient id="aura"><stop stop-color="#038AC2" stop-opacity=".30" /><stop offset="1" stop-color="#021322" stop-opacity="0" /></radialGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#40BCFF" stroke-opacity=".055" stroke-width="1" /></pattern>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" /></filter>
+</defs>
+<rect x="2" y="2" width="306" height="62" fill="url(#surface)" stroke="url(#metal)" stroke-width="2" /><rect x="7" y="7" width="296" height="52" fill="none" stroke="#163349" stroke-width="1" /><rect x="8" y="8" width="294" height="50" fill="url(#grid)" stroke="none" stroke-width="0" /><path d="M2 2H308V64H2Z" pathLength="100" fill="none" stroke="#12C7FF" stroke-width="2.2" opacity=".45" stroke-dasharray="8 92" class="sweep" /><path d="M2 2H308V64H2Z" pathLength="100" fill="none" stroke="#E6FAFF" stroke-width="1.8" opacity=".6" stroke-dasharray="1.2 98.8" class="spark" /><path d="M21 9H9V21" fill="none" stroke="#A9C9DD" stroke-opacity=".65" stroke-width="1" /><path d="M289 9H301V21" fill="none" stroke="#A9C9DD" stroke-opacity=".65" stroke-width="1" /><path d="M21 57H9V45" fill="none" stroke="#A9C9DD" stroke-opacity=".65" stroke-width="1" /><path d="M289 57H301V45" fill="none" stroke="#A9C9DD" stroke-opacity=".65" stroke-width="1" /><g transform="translate(24 21) scale(0.9583333333333334)" fill="none" stroke="#25D6FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="3" /><circle cx="6" cy="21" r="3" /><circle cx="19" cy="7" r="3" /><path d="M6 7v11m13-8c0 6-13 4-13 8" /></g><text x="62" y="42" fill="#F0F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">GitHub</text><text x="279" y="41" fill="#25D6FF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start">↗</text>
+</svg>
