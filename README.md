@@ -6,7 +6,7 @@
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/hero-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/hero-mobile.svg" />
-  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. An animated orchestration hub illustrates backend systems, durable workflows, data engineering and AI-assisted delivery." />
+  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Full-Stack Applications, Agentic AI and Automation. Full-width animated orchestration artwork behind the headline. Focus areas: workflow automation, data engineering, data visualization and AI-native applications." />
 </picture>
 </p>
 
@@ -15,7 +15,7 @@
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/overview-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/overview.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/overview-mobile.svg" />
-  <img src="./assets/profile/overview.svg" width="100%" alt="About me: enterprise experience and a builder mindset. I build backend systems, data platforms and workflow automation with clear contracts and visible execution. Deterministic by default; AI where it earns its place. Technologies: Python, JavaScript, C#/.NET, React, Node.js, PostgreSQL, Docker, Temporal, Oracle PL/SQL, REST APIs, Git/GitHub and TypeScript." />
+  <img src="./assets/profile/overview.svg" width="100%" alt="About me: I build scalable full-stack applications across workflow automation, data engineering and interactive data visualization. SkyCommand orchestrates work; SkyDataStudio creates trusted data products; MacroAnalyzer makes data explorable. My focus is AI-native applications integrating agentic AI, MCP-connected coding agents and workflow automation. Technology stack: Python, JavaScript, C#/.NET, React, Node.js, PostgreSQL, Docker, Temporal, Oracle/SQL, REST APIs, Git/GitHub and TypeScript." />
 </picture>
 </p>
 
@@ -89,11 +89,13 @@
 
 ### About me
 
-I'm **Paul Sattaur**, a software engineer based in the Greater Toronto Area, Canada. I build backend systems, deterministic workflow automation, data platforms and operational software where execution is observable and recoverable.
+I'm **Paul Sattaur**, a full-stack software engineer based in the Greater Toronto Area, Canada. I design and build applications with scalability, maintainability and a clear user experience in mind, connecting interactive interfaces, APIs, databases, data pipelines and containerized services.
 
-My enterprise background includes **Oracle SQL/PLSQL, Java/J2EE, C#/.NET components, requirements analysis, integrations and production troubleshooting**. My independent development work extends that foundation with **Node.js, TypeScript, React, PostgreSQL, ASP.NET Core, Python, Docker and Temporal**.
+My work spans three connected areas: **workflow automation with SkyCommand**, **data engineering with SkyDataStudio**, and **interactive analytics and data visualization with MacroAnalyzer**. Together, these applications bring operational workflows, trusted analytical data and user-facing insights into a connected ecosystem.
 
-**Deterministic workflows are my default. AI agents are optional tools for work that benefits from adaptive reasoning—not a replacement for engineering judgment, testing or clear execution boundaries.**
+I work across **React, JavaScript/TypeScript, Node.js, Python/FastAPI, C#/ASP.NET Core and PostgreSQL**, with **Temporal** for workflow orchestration, **Airflow and dbt** for data engineering, **ECharts/D3** for visualization, and **Docker** for containerized services. My enterprise background also includes Oracle SQL/PLSQL, Java/J2EE, requirements analysis, integrations and production troubleshooting.
+
+My current focus is **AI-native applications and agentic automation**: integrating embedded AI agents and MCP-connected coding assistants with application workflows, configured capabilities and observable execution. I build across the stack, from the user experience through to the services and data that power it.
 
 ### Selected work
 
