@@ -1,17 +1,11 @@
 <!-- Paul Sattaur / PStar80 | Repository-local blue metallic profile. -->
-<!-- All visual assets live beside this README at the repository root. No external render service required. -->
+<!-- Static-design assets live beside this README. Daily activity assets are published to output. -->
 
 <p>
 <picture>
   <source media="(max-width: 650px)" srcset="./hero-mobile.svg" />
-  <img src="./hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. Backend systems, durable workflows, data engineering and AI-assisted delivery." />
+  <img src="./hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. An animated orchestration hub illustrates backend systems, durable workflows, data engineering and AI-assisted delivery." />
 </picture>
-</p>
-
-<p align="center">
-  <a href="https://github.com/PStar80/MacroAnalyzer">Explore MacroAnalyzer</a> ·
-  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough">Ask about SkyCommand</a> ·
-  <a href="https://www.linkedin.com/in/paulsattaur/">Connect on LinkedIn</a>
 </p>
 
 <p>
@@ -24,7 +18,7 @@
 <p>
 <picture>
   <source media="(max-width: 650px)" srcset="./systems-mobile.svg" />
-  <img src="./systems.svg" width="100%" alt="SkyCommand simplified architecture: React operator interface → Node.js Core API → Temporal workflows → tools and optional AI agents. PostgreSQL stores workflow and run metadata. Current focus: durable orchestration, agent integration, operational visibility and developer workflows." />
+  <img src="./systems.svg" width="100%" alt="SkyCommand simplified architecture: React operator interface to Node.js Core API to Temporal workflows to registered tools. AI agents form an optional workflow branch. PostgreSQL stores workflow and run metadata. The animation illustrates architecture, not live system status." />
 </picture>
 </p>
 
@@ -36,8 +30,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer — public source ↗</strong></a> ·
-  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>SkyCommand — discuss a walkthrough ↗</strong></a>
+  <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer source</strong></a> ·
+  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>Ask about a SkyCommand walkthrough</strong></a>
+</p>
+
+<p>
+<picture>
+  <source media="(max-width: 650px)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-mobile.svg" />
+  <img src="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity.svg" width="100%" alt="Engineering Activity — a blue contribution calendar generated daily from GitHub-reported aggregate counts. Includes the date range, contribution total, active days and last update. No private repository details are queried or displayed. See Activity data in the readable profile details below." />
+</picture>
 </p>
 
 <p>
@@ -87,6 +88,12 @@ An additional public project in my development ecosystem. The repository is the 
 - Observable systems and structured results over silent failure.
 - Recoverability, repeatable validation and human review.
 - Measure performance before optimizing it.
+
+### Activity data
+
+The blue calendar is generated daily by this repository's GitHub Actions workflow from GitHub's contribution-calendar API. It displays aggregate daily counts, not repository names or commit details. Counts are limited to what GitHub returns to the built-in Actions token and can differ from the native profile calendar because of visibility, date ranges and update timing. The last successful update is printed on the card; a failed refresh leaves the previously published version intact.
+
+Header and architecture animations are illustrations, not live operational telemetry. Motion stops when the viewer's browser honours the reduced-motion preference.
 
 ### Contact
 
