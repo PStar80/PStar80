@@ -35,15 +35,22 @@ jobs:
           OUTPUT_DIR: dist
         run: python scripts/generate_blue_activity.py
 
+      - name: Generate reduced-motion image sources
+        env:
+          OUTPUT_DIR: dist
+        run: python scripts/create_static_assets.py
+
       - name: Commit refined profile graphics when changed
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- hero.svg hero-mobile.svg overview.svg overview-mobile.svg systems.svg systems-mobile.svg projects.svg projects-mobile.svg connect.svg connect-mobile.svg linkedin.svg linkedin-mobile.svg github.svg github-mobile.svg email.svg email-mobile.svg
+          for name in hero overview systems projects connect linkedin github email; do
+            git add -- "${name}.svg" "${name}-mobile.svg" "assets/static/${name}.svg" "assets/static/${name}-mobile.svg"
+          done
           if ! git diff --cached --quiet; then
-            git commit -m 'Refine profile animation, optional-agent diagram and text readability'
+            git commit -m 'Refine profile graphics and reduced-motion fallbacks'
             git push origin HEAD:main
           fi
 
