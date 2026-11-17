@@ -39,7 +39,8 @@
 
 <p align="center">
   <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer source</strong></a> ·
-  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>Ask about a SkyCommand walkthrough</strong></a>
+  <a href="https://github.com/PStar80/SkyCommand-Demo"><strong>Explore SkyCommand</strong></a> ·
+  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>Request a walkthrough</strong></a>
 </p>
 
 <p>
@@ -79,11 +80,11 @@ My enterprise background includes **Oracle SQL/PLSQL, Java/J2EE, C#/.NET compone
 
 ### Selected work
 
-**SkyCommand — independent platform, private source**
+**[SkyCommand — independent platform, private source](https://github.com/PStar80/SkyCommand-Demo)**
 
 A workflow automation and orchestration platform with Temporal-backed durable execution, reusable tools, optional AI-agent nodes, approvals, retries, recovery controls, scheduling, structured results and operational visibility. My current work includes agent integration and developer workflows across Git, Docker and database-backed services.
 
-The implementation remains private. I welcome conversations about its architecture and demonstrations; a separate public showcase is planned. [Ask about SkyCommand](mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough).
+Explore the [public showcase](https://github.com/PStar80/SkyCommand-Demo) for the architecture overview, feature tour, and walkthrough guide. The application implementation remains private. [Ask about SkyCommand](mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough).
 
 **[MacroAnalyzer — public repository](https://github.com/PStar80/MacroAnalyzer)**
 
