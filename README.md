@@ -1,206 +1,97 @@
-<div align="center">
+<!-- Paul Sattaur / PStar80 | Repository-local blue metallic profile. -->
+<!-- All visual assets live in assets/profile. No external render service required. -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050505,55:111111,100:D4AF37&text=Paul%20Sattaur&fontAlign=50&fontAlignY=38&fontColor=F6E7A1&fontSize=52&fontWeight=700&animation=fadeIn" width="100%" alt="Paul Sattaur profile banner" />
-
-<a href="https://github.com/PStar1980">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=1100&color=D4AF37&center=true&vCenter=true&width=850&lines=Backend+Systems+Engineer;Deterministic+Workflow+Automation;Data+Engineering+%26+PostgreSQL;Durable+Systems+with+Temporal;AI-Assisted+Software+Engineering" alt="Animated engineering focus" />
-</a>
-
-<br>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Paul_Sattaur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paulsattaur)
-[![GitHub](https://img.shields.io/badge/GitHub-PStar1980-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PStar1980)
-![Open to Opportunities](https://img.shields.io/badge/Open_to-Engineering_Opportunities-D4AF37?style=for-the-badge&labelColor=111111&color=D4AF37)
-
-<br>
-
-<a href="#-about-me">About</a> ·
-<a href="#-technology-stack">Technology</a> ·
-<a href="#-featured-project">Featured Project</a> ·
-<a href="#-what-i-build">What I Build</a> ·
-<a href="#-engineering-principles">Principles</a> ·
-<a href="#-github-activity">GitHub Activity</a> ·
-<a href="#-connect">Connect</a>
-
-</div>
-
----
-
-## 👋 About Me
-
-I build **backend systems, deterministic workflow automation, data platforms, and operational software** where execution is observable, recoverable, and backed by evidence.
-
-My engineering background spans enterprise **Oracle PL/SQL**, **C# / ASP.NET**, and modern application development with **Node.js, PostgreSQL, React, Python, Docker, and Temporal**. I enjoy turning complex operational processes into systems with clear contracts, measurable behavior, and reliable recovery paths.
-
-My current focus is reusable architecture for **workflow orchestration, data engineering, backend services, observability, and AI-assisted software delivery**.
-
-<div align="center">
-
-![Workflow Automation](https://img.shields.io/badge/Workflow_Automation-Deterministic-D4AF37?style=flat-square&labelColor=111111)
-![Data Engineering](https://img.shields.io/badge/Data_Engineering-Observable-4EA1FF?style=flat-square&labelColor=111111)
-![Backend Systems](https://img.shields.io/badge/Backend_Systems-Durable-36C98F?style=flat-square&labelColor=111111)
-![AI Assisted](https://img.shields.io/badge/AI--Assisted-Validated-C084FC?style=flat-square&labelColor=111111)
-
-</div>
-
----
-
-## 🛠️ Technology Stack
-
-<div align="center">
-
-### Core Technologies
-
-<table>
-  <tr>
-    <td align="center" width="120">
-      <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-      <br><strong>Python</strong>
-    </td>
-    <td align="center" width="120">
-      <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-      <br><strong>JavaScript</strong>
-    </td>
-    <td align="center" width="120">
-      <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="65" height="65" />
-      <br><strong>C#</strong>
-    </td>
-    <td align="center" width="120">
-      <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-      <br><strong>React</strong>
-    </td>
-    <td align="center" width="120">
-      <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-      <br><strong>GitHub</strong>
-    </td>
-  </tr>
-</table>
-
-### Platform & Tooling
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,postgres,docker,git,powershell,vscode,html,css&theme=dark&perline=10" alt="Platform and tooling skills" />
-</a>
-
-<br>
-
-![Temporal](https://img.shields.io/badge/Temporal-Durable_Workflows-111111?style=for-the-badge&logo=temporal&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-PL%2FSQL-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![REST](https://img.shields.io/badge/REST-APIs-0B7285?style=for-the-badge)
-![ECharts](https://img.shields.io/badge/Apache-ECharts-AA344D?style=for-the-badge&logo=apacheecharts&logoColor=white)
-
-</div>
-
----
-
-## ⚡ Featured Project
-
-<div align="center">
-
-<a href="https://github.com/PStar1980/SkyCommand">
-  <img src="https://raw.githubusercontent.com/PStar1980/PStar1980/output/skycommand-logo-lockup.png" width="430" alt="SkyCommand" />
-</a>
-
-<br>
-
-**Deterministic workflow automation for controlled execution, durable orchestration, and inspectable evidence.**
-
-![Temporal](https://img.shields.io/badge/Temporal-Workflow_Engine-111111?style=flat-square)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/React-Admin_UI-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Operational_State-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Runtime-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-<br>
-</div>
-
-<br>
-
-SkyCommand is a full-stack workflow platform built around **deterministic control flow and durable execution**. Developers can register tools, compose visual workflows, add approvals and conditions, schedule execution, inspect structured results, and diagnose performance through phase-level telemetry.
-<br>
-
-**Highlights**
-
-- Temporal-backed durable workflows with retries, approvals, branching, and recovery.
-- Registered tool execution with typed parameters and structured output contracts.
-- Human-in-the-loop controls for sensitive or high-impact operations.
-- Docker operations, infrastructure observability, and durable audit evidence.
-- Git repository automation with guarded host-native execution.
-- Operational dashboards, execution history, diagnostics, and performance telemetry.
-
-<div align="center">
-<br>
-  
-[![Explore SkyCommand](https://img.shields.io/badge/Explore-SkyCommand-D4AF37?style=for-the-badge&labelColor=111111&logo=github&logoColor=white)](https://github.com/PStar1980/SkyCommand)
-
-</div>
-
-> More backend, data-engineering, and analytics systems are being prepared for public release.
-
----
-
-## 🧩 What I Build
-
-| Area | What I care about |
-| --- | --- |
-| **Workflow Automation** | Deterministic control flow, durable execution, retries, approvals, recovery, scheduling, and evidence. |
-| **Backend Systems** | Clear service boundaries, APIs, operational state, idempotency, diagnostics, and maintainable architecture. |
-| **Data Engineering** | Portable ingestion, data contracts, PostgreSQL design, quality rules, revisions, freshness, and replay. |
-| **Observability** | Structured results, phase-level telemetry, audit trails, execution history, and measurable performance. |
-| **AI-Assisted Engineering** | Faster implementation with testing, validation, review, and human judgment kept firmly in the loop. |
-
----
-
-## 🧭 Engineering Principles
-
-> **Clear contracts over hidden assumptions.**  
-> **Durable evidence over mystery-box automation.**  
-> **Reusable architecture over one-off machinery.**  
-> **Observable systems over silent failure.**  
-> **Optimize after telemetry shows where the time actually went.**
-
----
-
-## 📊 GitHub Activity
-
-<div align="center">
-
-### GitHub Engineering Telemetry
-
-<img src="https://raw.githubusercontent.com/PStar1980/PStar1980/output/profile-telemetry.svg" width="95%" alt="GitHub engineering telemetry" />
-<br><br>
-<img src="https://raw.githubusercontent.com/PStar1980/PStar1980/output/language-matrix.svg" width="95%" alt="GitHub language matrix" />
-<br>
-
-### Contribution Arcade
-
+<p>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PStar1980/PStar1980/output/pacman-contribution-graph-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PStar1980/PStar1980/output/pacman-contribution-graph.svg" />
-  <img src="https://raw.githubusercontent.com/PStar1980/PStar1980/output/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" width="95%" />
+  <source media="(max-width: 650px)" srcset="./assets/profile/hero-mobile.svg" />
+  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Software Engineer. Workflow Automation and Agentic AI Orchestration. Backend systems, durable workflows, data engineering and AI-assisted delivery." />
 </picture>
+</p>
 
-<br>
+<p align="center">
+  <a href="https://github.com/PStar80/MacroAnalyzer">Explore MacroAnalyzer</a> ·
+  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough">Ask about SkyCommand</a> ·
+  <a href="https://www.linkedin.com/in/paulsattaur/">Connect on LinkedIn</a>
+</p>
 
-<sub>Live profile telemetry and the Pac-Man contribution graph are regenerated automatically from public GitHub activity.</sub>
+<p>
+<picture>
+  <source media="(max-width: 650px)" srcset="./assets/profile/overview-mobile.svg" />
+  <img src="./assets/profile/overview.svg" width="100%" alt="About me: enterprise experience and a builder mindset. I build backend systems, data platforms and workflow automation with clear contracts and visible execution. Deterministic by default; AI where it earns its place. Technologies: Python, JavaScript, C#/.NET, React, Node.js, PostgreSQL, Docker, Temporal, Oracle PL/SQL, REST APIs, Git/GitHub and TypeScript." />
+</picture>
+</p>
 
-</div>
+<p>
+<picture>
+  <source media="(max-width: 650px)" srcset="./assets/profile/systems-mobile.svg" />
+  <img src="./assets/profile/systems.svg" width="100%" alt="SkyCommand simplified architecture: React operator interface → Node.js Core API → Temporal workflows → tools and optional AI agents. PostgreSQL stores workflow and run metadata. Current focus: durable orchestration, agent integration, operational visibility and developer workflows." />
+</picture>
+</p>
 
----
+<p>
+<picture>
+  <source media="(max-width: 650px)" srcset="./assets/profile/projects-mobile.svg" />
+  <img src="./assets/profile/projects.svg" width="100%" alt="Selected projects. SkyCommand is my private-source independent workflow platform: durable workflows, optional AI agents, run diagnostics, scoped Git delivery, Docker operations and structured results. MacroAnalyzer is a public React and ASP.NET Core/C# analytics project with PostgreSQL, REST APIs, dashboards, alerts and time-series views." />
+</picture>
+</p>
 
-## 📡 Connect
+<p align="center">
+  <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer — public source ↗</strong></a> ·
+  <a href="mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough"><strong>SkyCommand — discuss a walkthrough ↗</strong></a>
+</p>
 
-I am interested in engineering opportunities involving **backend development, data engineering, deterministic workflow automation, analytics platforms, and AI-enabled software delivery**.
+<p>
+<picture>
+  <source media="(max-width: 650px)" srcset="./assets/profile/connect-mobile.svg" />
+  <img src="./assets/profile/connect.svg" width="100%" alt="Let's connect. Open to backend engineering, workflow automation, AI-enabled applications and consulting conversations. Build systems that explain themselves." />
+</picture>
+</p>
 
-<div align="center">
+<p align="center">
+  <a href="https://www.linkedin.com/in/paulsattaur/"><picture><source media="(max-width: 650px)" srcset="./assets/profile/linkedin-mobile.svg" /><img src="./assets/profile/linkedin.svg" width="32%" alt="Connect with Paul Sattaur on LinkedIn" /></picture></a>
+  <a href="https://github.com/PStar80"><picture><source media="(max-width: 650px)" srcset="./assets/profile/github-mobile.svg" /><img src="./assets/profile/github.svg" width="32%" alt="Visit PStar80 on GitHub" /></picture></a>
+  <a href="mailto:paulsattaur@hotmail.com"><picture><source media="(max-width: 650px)" srcset="./assets/profile/email-mobile.svg" /><img src="./assets/profile/email.svg" width="32%" alt="Email Paul at paulsattaur@hotmail.com" /></picture></a>
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paulsattaur)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PStar1980)
+<details>
+<summary><strong>Profile details — readable text, projects and engineering principles</strong></summary>
 
-<br><br>
+### About me
 
-**Build systems that explain themselves.**
+I'm **Paul Sattaur**, a software engineer based in the Greater Toronto Area, Canada. I build backend systems, deterministic workflow automation, data platforms and operational software where execution is observable and recoverable.
 
-</div>
+My enterprise background includes **Oracle SQL/PLSQL, Java/J2EE, C#/.NET components, requirements analysis, integrations and production troubleshooting**. My independent development work extends that foundation with **Node.js, TypeScript, React, PostgreSQL, ASP.NET Core, Python, Docker and Temporal**.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:050505,55:111111,100:D4AF37" width="100%" alt="Profile footer" />
+**Deterministic workflows are my default. AI agents are optional tools for work that benefits from adaptive reasoning—not a replacement for engineering judgment, testing or clear execution boundaries.**
+
+### Selected work
+
+**SkyCommand — independent platform, private source**
+
+A workflow automation and orchestration platform with Temporal-backed durable execution, reusable tools, optional AI-agent nodes, approvals, retries, recovery controls, scheduling, structured results and operational visibility. My current work includes agent integration and developer workflows across Git, Docker and database-backed services.
+
+The implementation remains private. I welcome conversations about its architecture and demonstrations; a separate public showcase is planned. [Ask about SkyCommand](mailto:paulsattaur@hotmail.com?subject=SkyCommand%20walkthrough).
+
+**[MacroAnalyzer — public repository](https://github.com/PStar80/MacroAnalyzer)**
+
+A full-stack macroeconomic analytics project built with React, ASP.NET Core/C#, PostgreSQL and REST APIs, with dashboards, time-series views, alerting and ECharts/D3 visualizations.
+
+**[SkyDataStudio — public repository](https://github.com/PStar80/SkyDataStudio)**
+
+An additional public project in my development ecosystem. The repository is the source of truth for its current scope and implementation.
+
+### Engineering principles
+
+- Clear contracts over hidden assumptions.
+- Deterministic execution by default; agents where useful.
+- Observable systems and structured results over silent failure.
+- Recoverability, repeatable validation and human review.
+- Measure performance before optimizing it.
+
+### Contact
+
+[LinkedIn](https://www.linkedin.com/in/paulsattaur/) · [GitHub](https://github.com/PStar80) · [Email](mailto:paulsattaur@hotmail.com)
+
+Open to conversations about backend development, workflow automation, data engineering, AI-enabled software and consulting.
+
+</details>
