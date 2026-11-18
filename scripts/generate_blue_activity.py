@@ -46,7 +46,11 @@ def validate(data: dict) -> list[dict]:
             if d['weekday'] != (dt.weekday()+1)%7: raise ValueError('Weekday mismatch')
             if not 0<=(dt-date.fromisoformat(week['firstDay'])).days<7: raise ValueError('Day outside week')
             days.append(d)
-    if not 360<=len(days)<=367: raise ValueError('Unexpected calendar date range')
+    # GitHub GraphQL aligns the yearly calendar to complete Sunday-starting weeks.
+    # The resulting date list may exceed 367 days even when the data is valid.
+    # Keep the tight week-count, weekday, contiguous-date, and total checks below.
+    if not 360<=len(days)<=378:
+        raise ValueError(f'Unexpected calendar date range: {len(days)} days across {len(weeks)} weeks')
     dates=[date.fromisoformat(d['date']) for d in days]
     if len(set(dates))!=len(dates): raise ValueError('Duplicate dates')
     if dates != sorted(dates): raise ValueError('Dates not ordered')
