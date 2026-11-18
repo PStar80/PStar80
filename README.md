@@ -10,6 +10,10 @@
 </picture>
 </p>
 
+<p align="center">
+  <a href="https://pstar80.github.io/"><strong>Explore My Portfolio</strong></a>
+</p>
+
 <p>
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/overview-mobile.svg" />
@@ -137,7 +141,7 @@ Header and architecture animations are illustrations, not live operational telem
 
 ### Contact
 
-[LinkedIn](https://www.linkedin.com/in/paulsattaur/) · [GitHub](https://github.com/PStar80) · [Email](mailto:paulsattaur@hotmail.com)
+[Portfolio](https://pstar80.github.io/) · [LinkedIn](https://www.linkedin.com/in/paulsattaur/) · [GitHub](https://github.com/PStar80) · [Email](mailto:paulsattaur@hotmail.com)
 
 Open to conversations about backend development, workflow automation, data engineering, AI-enabled software and consulting.
 
