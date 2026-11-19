@@ -11,7 +11,10 @@
 </p>
 
 <p align="center">
-  <a href="https://pstar80.github.io/"><strong>Explore My Portfolio</strong></a>
+  <a href="https://pstar80.github.io/"><img src="./assets/actions/portfolio.svg" width="330" alt="Explore My Portfolio — open the interactive engineering website" /></a>
+</p>
+<p align="center"><strong>Full-stack systems. Built to connect.</strong><br />
+  Workflow automation · Data engineering · Interactive analytics · AI-native applications
 </p>
 
 <p>
@@ -33,7 +36,22 @@
 </p>
 
 <p align="center">
+  <a href="https://pstar80.github.io/#process"><img src="./assets/actions/process.svg" width="300" alt="Explore Interactive Process — open the website's selectable workflow diagram" /></a>
+</p>
+<p align="center">
   <a href="https://github.com/PStar80/SkyCommand-Demo/blob/main/docs/architecture.md"><strong>MCP, agent capabilities &amp; work-order architecture</strong></a>
+</p>
+
+<p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-mobile-static.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-static.svg" />
+  <source media="(max-width: 650px)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-mobile.svg" />
+  <img src="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity.svg" width="100%" alt="Engineering Activity — a blue contribution calendar generated daily from GitHub-reported aggregate counts. Includes the date range, contribution total, active days and last update. No private repository details are queried or displayed. See Activity data in the readable profile details below." />
+</picture>
+</p>
+<p align="center">
+  <a href="https://pstar80.github.io/#activity"><img src="./assets/actions/activity.svg" width="300" alt="Explore Activity Calendar — open the portfolio's interactive contribution calendar" /></a>
 </p>
 
 <p>
@@ -64,14 +82,7 @@
   <a href="https://github.com/PStar80/MacroAnalyzer"><strong>MacroAnalyzer source</strong></a>
 </p>
 
-<p>
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-mobile-static.svg" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-static.svg" />
-  <source media="(max-width: 650px)" srcset="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/PStar80/PStar80/output/engineering-activity.svg" width="100%" alt="Engineering Activity — a blue contribution calendar generated daily from GitHub-reported aggregate counts. Includes the date range, contribution total, active days and last update. No private repository details are queried or displayed. See Activity data in the readable profile details below." />
-</picture>
-</p>
+
 
 <p>
 <picture>
@@ -86,6 +97,10 @@
   <a href="https://www.linkedin.com/in/paulsattaur/"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/linkedin-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/linkedin.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/linkedin-mobile.svg" /><img src="./assets/profile/linkedin.svg" width="32%" alt="Connect with Paul Sattaur on LinkedIn" /></picture></a>
   <a href="https://github.com/PStar80"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/github-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/github.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/github-mobile.svg" /><img src="./assets/profile/github.svg" width="32%" alt="Visit PStar80 on GitHub" /></picture></a>
   <a href="mailto:paulsattaur@hotmail.com"><picture><source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/email-mobile.svg" /><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/email.svg" /><source media="(max-width: 650px)" srcset="./assets/profile/email-mobile.svg" /><img src="./assets/profile/email.svg" width="32%" alt="Email Paul at paulsattaur@hotmail.com" /></picture></a>
+</p>
+<p align="center">
+  <a href="https://pstar80.github.io/#contact"><img src="./assets/actions/map.svg" width="265" alt="Explore World Map — open the interactive country map" /></a>
+  <a href="https://pstar80.github.io/#discussion"><img src="./assets/actions/discussion.svg" width="265" alt="Join The Discussion — open GitHub-powered comments" /></a>
 </p>
 
 <details>
