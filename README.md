@@ -73,12 +73,14 @@
 </p>
 
 <p>
+<a href="https://pstar80.github.io/#contact">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/connect-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/connect.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/connect-mobile.svg" />
-  <img src="./assets/profile/connect.svg" width="100%" alt="Let's connect. Open to backend engineering, workflow automation, AI-enabled applications and consulting conversations. Build systems that explain themselves." />
+  <img src="./assets/profile/connect.svg" width="100%" alt="Let's Connect card with a View button. Click the entire card to open the portfolio contact section. Open to backend engineering, workflow automation, AI-enabled applications and consulting conversations." />
 </picture>
+</a>
 </p>
 
 <p align="center">

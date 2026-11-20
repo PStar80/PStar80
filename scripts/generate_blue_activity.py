@@ -63,6 +63,16 @@ def text(x,y,value,size=18,fill='#A4BDCF',weight=400,anchor='start'):
     return f'<text x="{x}" y="{y}" font-family="Segoe UI,Arial,sans-serif" font-size="{size}" fill="{fill}" font-weight="{weight}" text-anchor="{anchor}">{html.escape(str(value))}</text>'
 
 
+def outer_brackets(w,h):
+    """Match the regular-size corner accents on the other outer profile cards."""
+    corners=(
+        'M21 9H9V21',
+        f'M{w-21} 9H{w-9}V21',
+        f'M21 {h-9}H9V{h-21}',
+        f'M{w-21} {h-9}H{w-9}V{h-21}',
+    )
+    return ''.join(f'<path d="{d}" fill="none" stroke="#A9C9DD" stroke-opacity=".65" stroke-width="1"/>' for d in corners)
+
 def shell(w,h,body,desc):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">
 <title id="title">Engineering Activity — PStar80</title><desc id="desc">{html.escape(desc)}</desc>
@@ -70,6 +80,7 @@ def shell(w,h,body,desc):
 <style>.edge{{animation:edge 28s linear infinite}}@keyframes edge{{to{{stroke-dashoffset:-100}}}}@media(prefers-reduced-motion:reduce){{.edge{{animation:none!important}}}}</style>
 <rect x="2" y="2" width="{w-4}" height="{h-4}" fill="url(#surface)" stroke="url(#metal)" stroke-width="2"/><rect x="7" y="7" width="{w-14}" height="{h-14}" fill="url(#grid)" stroke="#163349"/>
 <path d="M2 2H{w-2}V{h-2}H2Z" pathLength="100" fill="none" stroke="#25D6FF" opacity=".65" stroke-width="1.6" stroke-dasharray="7 93" class="edge"/>
+{outer_brackets(w,h)}
 {body}
 </svg>'''
 
