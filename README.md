@@ -2,12 +2,14 @@
 <!-- Animated assets are in assets/profile; still-image fallbacks are in assets/static; daily activity is on output. -->
 
 <p>
+<a href="https://pstar80.github.io/" title="View the PStar80 portfolio">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/hero-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/hero-mobile.svg" />
-  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Full-Stack Applications, Agentic AI and Automation. Full-width animated orchestration artwork behind the headline. Focus areas: workflow automation, data engineering, data visualization and AI-native applications." />
+  <img src="./assets/profile/hero.svg" width="100%" alt="Paul Sattaur — Full-Stack Applications, Agentic AI and Automation. Includes a dark metallic View Portfolio button below the subtitle. Click the entire hero image to visit the interactive PStar80 portfolio. Focus areas: workflow automation, data engineering, data visualization and AI-native applications." />
 </picture>
+</a>
 </p>
 
 <p align="center"><strong>Full-stack systems. Built to connect.</strong><br />
@@ -32,9 +34,6 @@
 </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/PStar80/SkyCommand-Demo/blob/main/docs/architecture.md"><strong>MCP, agent capabilities &amp; work-order architecture</strong></a>
-</p>
 
 <p>
 <picture>
