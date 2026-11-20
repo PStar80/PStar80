@@ -26,12 +26,14 @@
 </p>
 
 <p>
+<a href="https://pstar80.github.io/#process" title="View interactive development process flow">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/systems-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/systems.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/systems-mobile.svg" />
-  <img src="./assets/profile/systems.svg" width="100%" alt="Development Process Flow: Cloud Agent connects to the Operator and Cloud File Storage; Cloud File Storage relays artifacts to the Local Agent, which the Operator initiates. Operator and Local Agent both connect to React UI / Node.js Core API. One arrow enters Execution Capabilities containing Registered Tools, Embedded AI Agents and Published Workflows. One arrow reaches Automation Endpoints: File System, Database, Git Repositories and Web APIs. Desktop shows one row; mobile places File System and Database in the left column and Git Repositories and Web APIs in the right column. Current development relay and conceptual platform flow; configured permissions apply." />
+  <img src="./assets/profile/systems.svg" width="100%" alt="Development Process Flow, including a View button in its upper-right corner. Click the entire card to open the interactive process on the portfolio website. Cloud Agent, Operator, Cloud File Storage, Local Agent, reusable capabilities, and automation endpoints." />
 </picture>
+</a>
 </p>
 
 
@@ -45,21 +47,29 @@
 </p>
 
 <p>
+<a href="https://github.com/PStar80/SkyCommand-Demo" title="View SkyCommand public showcase">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/projects-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/projects.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/projects-mobile.svg" />
-  <img src="./assets/profile/projects.svg" width="100%" alt="Featured SkyCommand alongside Current Focus: durable workflows, optional AI agents, MCP-enabled coding, configured embedded-agent capabilities and work-order coordination. Native work-order integration is planned for Phase 20." />
+  <img src="./assets/profile/projects.svg" width="100%" alt="Featured SkyCommand, with a View button, alongside the Current Focus panel. Click the combined image to visit the SkyCommand-Demo repository. Durable workflows, AI agents, MCP-enabled coding, and work-order coordination." />
 </picture>
+</a>
 </p>
 
-<p>
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/portfolio-mobile.svg" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/portfolio.svg" />
-  <source media="(max-width: 650px)" srcset="./assets/profile/portfolio-mobile.svg" />
-  <img src="./assets/profile/portfolio.svg" width="100%" alt="Public projects: SkyDataStudio on the left, MacroAnalyzer on the right. SkyDataStudio is a data engineering workbench for governed analytical products, with metadata, pipelines, dbt transformations, data quality and lineage. MacroAnalyzer is a React and ASP.NET Core/C# macroeconomic analytics application with PostgreSQL, dashboards, alerts and historical time-series views." />
-</picture>
+<p align="center">
+<a href="https://github.com/PStar80/SkyDataStudio" title="View SkyDataStudio repository"><picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/skydatastudio-card-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/skydatastudio-card.svg" />
+  <source media="(max-width: 650px)" srcset="./assets/profile/skydatastudio-card-mobile.svg" />
+  <img src="./assets/profile/skydatastudio-card.svg" width="49%" alt="SkyDataStudio project card with a View button. Click the entire card to open its GitHub repository." />
+</picture></a>
+<a href="https://github.com/PStar80/MacroAnalyzer" title="View MacroAnalyzer repository"><picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/macroanalyzer-card-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/macroanalyzer-card.svg" />
+  <source media="(max-width: 650px)" srcset="./assets/profile/macroanalyzer-card-mobile.svg" />
+  <img src="./assets/profile/macroanalyzer-card.svg" width="49%" alt="MacroAnalyzer project card with a View button. Click the entire card to open its GitHub repository." />
+</picture></a>
 </p>
 
 <p>
