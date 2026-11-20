@@ -2,7 +2,7 @@
 <!-- Animated assets are in assets/profile; still-image fallbacks are in assets/static; daily activity is on output. -->
 
 <p>
-<a href="https://pstar80.github.io/" title="View the PStar80 portfolio">
+<a href="https://pstar80.github.io/">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/hero-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero.svg" />
@@ -26,7 +26,7 @@
 </p>
 
 <p>
-<a href="https://pstar80.github.io/#process" title="View interactive development process flow">
+<a href="https://pstar80.github.io/#process">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/systems-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/systems.svg" />
@@ -47,7 +47,7 @@
 </p>
 
 <p>
-<a href="https://github.com/PStar80/SkyCommand-Demo" title="View SkyCommand public showcase">
+<a href="https://github.com/PStar80/SkyCommand-Demo">
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/projects-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/projects.svg" />
@@ -58,13 +58,13 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/PStar80/SkyDataStudio" title="View SkyDataStudio repository"><picture>
+<a href="https://github.com/PStar80/SkyDataStudio"><picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/skydatastudio-card-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/skydatastudio-card.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/skydatastudio-card-mobile.svg" />
   <img src="./assets/profile/skydatastudio-card.svg" width="49%" alt="SkyDataStudio project card with a View button. Click the entire card to open its GitHub repository." />
 </picture></a>
-<a href="https://github.com/PStar80/MacroAnalyzer" title="View MacroAnalyzer repository"><picture>
+<a href="https://github.com/PStar80/MacroAnalyzer"><picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 650px)" srcset="./assets/static/macroanalyzer-card-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/macroanalyzer-card.svg" />
   <source media="(max-width: 650px)" srcset="./assets/profile/macroanalyzer-card-mobile.svg" />
