@@ -1,12 +1,9 @@
-name: Generate profile activity
+name: Generate Engineering Activity
 
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 concurrency:
   group: profile-activity
@@ -21,7 +18,7 @@ jobs:
 
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
 
@@ -53,15 +50,6 @@ jobs:
             git commit -m 'Refine profile graphics and reduced-motion fallbacks'
             git push origin HEAD:main
           fi
-
-      - name: Generate Pac-Man contribution graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ github.token }}
-          games: 'pacman'
-          player_style: 'opportunistic'
-          hide_month_labels: 'false'
 
       - name: Generate GitHub engineering telemetry
         env:
