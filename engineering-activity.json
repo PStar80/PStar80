@@ -1,0 +1,11 @@
+{
+  "source": "GitHub GraphQL contributionCalendar",
+  "scope": "Aggregate counts returned to the built-in repository Actions token; may differ from native profile. No repository details queried.",
+  "updated_utc": "2026-11-28 06:08",
+  "from": "2025-11-23",
+  "through": "2026-11-28",
+  "total_contributions": 2942,
+  "active_days": 174,
+  "calendar_days": 371,
+  "weeks": 53
+}
